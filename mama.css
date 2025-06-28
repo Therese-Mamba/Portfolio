@@ -1,0 +1,182 @@
+/* Réinitialisation de base */
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 20px;
+}
+
+/* En-tête */
+header, footer {
+    background-color: rgb(29, 29, 29);/* couleur de fond de l'en tete*/
+    text-align: center; /*permet de centrer le texte dans l'en tete*/
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Navigation */
+nav a {
+    color: white;/* couleur de liens dans la navigation*/
+    margin: 0 15px;/*permet de laisser un espace entre les liens*/
+    text-decoration: none;/*sert à supprimer les soulignements de liens*/
+    font-size: larger;
+}
+
+/* tout les titres*/
+h1 {
+    font-size: x-large;
+    color: white;
+}
+/* Titres */
+h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-size: 30px; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h4{
+    font-size: 25px;
+    margin-top: 10px;
+}
+p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #222;
+    text-align: center;
+}
+/* les sections*/
+#accueil {
+    padding: 20px;/*Espace interne de la'accueil*/
+    background-color: #a57f7f;/*couleur du de l'accueil*/
+    margin-bottom: 20px;/*Espacement entre les champ*/
+    display: flex;
+    justify-content: space-between;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+/* Section CV */
+#Cv {
+    padding: 5cqmin;
+    background-color: #a57f7f;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+/* Section Contact */
+#contact {
+    padding: 20px;
+    background-color: #a57f7f;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* Formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 10px;
+    max-width: 500px;
+    border: solid 2px #000;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+}
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+button{
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+/* Paragraphes */
+p {
+    font-size: large;
+    text-align: center;
+}
+
+/* Liens généraux */
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 20px;
+}
+/* Image */
+img {
+    max-width: 200px;
+    border-radius: 20px;
+}
+
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.hamburger span {
+    height: 4px;
+    width: 30px;
+    background: white;
+    margin: 5px 0;
+    border-radius: 2px;
+    transition: 0.4s;
+}
+
+@media (max-width: 800px) {
+    #accueil {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav {
+        display: none;
+        flex-direction: column;
+        background: #222;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+    }
+    nav.active {
+        display: flex;
+    }
+    .hamburger {
+        display: flex;
+    }
+    header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+}
+    
+
+    
+
